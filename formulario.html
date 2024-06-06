@@ -1,52 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Encuesta sobre la plantilla del betis 24-25">
-  <meta name="author" content="Oscar Fuentes">
-  <link rel="shortcut-icon" href="./assets/images/favicon_betis.png" type="image/png"> 
-  <title>Encuesta</title>
-</head>
-<body>
-  <header>
-    <h1>Encuesta Real Betis 24-25</h1>
-  </header>
-  <main>
-    <section><h2>Datos Personales</h2></section>
-    <form action="/" method="post" name="encuesta">
-      <label for="nombre">¿Cuál es tu nombre?</label>
-      <input type="text" name="nombre" id="nombre">
-      <label for="edad">¿Cuál es tu fecha de nacimiento?</label>
-      <input type="date" name="edad" id="edad">
-    <section><h2>Entrenador</h2>
-      <label for="entrenador"><strong>¿Te gustaría que continuase Pellegrini?</strong></label>
-        <input type="radio" name="entrenador" id="entrenador_si" value="si">Si
-        <input type="radio" name="entrenador" id="entrenador_no" value="no">No
-        <label for="entrenador2"><strong>En caso de que no, ¿cuál sería tu opción favorita?</strong></label>
-        <input type="radio" name="entrenador2" id="entrenador_arzu" value="arzu">Arzu
-        <input type="radio" name="entrenador2" id="entrenador_digard" value="digard">Digard
-        <input type="radio" name="entrenador2" id="entrenador_otro" value="otro">Otro
-  </section>
-  <section><h2>Plantilla</h2></section>
-      <p><strong>¿A qué jugador de la plantilla venderías?</strong></p>
-      <select name="jugador">
-        <option id="jugador_fran_vieites" value="fran_vieites">Fran Vieites</option>
-        <option id="jugador_hector_bellerin" value="hector_bellerin">Héctor Bellerín</option>
-        <option id="jugador_rodri" value="rodri">Rodri</option>
-        <option id="jugador_abde" value="abde">Abde</option>
-      </select>
-      <input type="submit" value="Enviar">
-    <section><h2>Fichajes</h2></section>
-      <label for="fichaje"></label>¿A qué jugador ficharías?
-      <input type="checkbox" name="fichaje" id="fichaje_adrián" value="adrián">Adrián
-      <input type="checkbox" name="fichaje" id="fichaje_vallés" value="vallés">Vallés
-      <input type="checkbox" name="fichaje" id="fichaje_vitao" value="vitao">Vitao
-      <input type="checkbox" name="fichaje" id="fichaje_dani_ceballos" value="dani_ceballos">Dani Ceballos
-      <input type="checkbox" name="fichaje" id="fichaje_alex_moreno" value="alex_moreno">Alex Moreno
-      <button type="reset">Borrar</button>
-      <button type="submit">Enviar</button>
-    </form>
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Encuesta sobre la plantilla del betis 24-25"
+    />
+    <meta name="author" content="Oscar Fuentes" />
+    <link
+      rel="shortcut-icon"
+      href="./assets/images/favicon_betis.png"
+      type="image/png"
+    />
+    <title>Encuesta</title>
+  </head>
+  <body>
+    <header>
+      <h1>Encuesta Real Betis 24-25</h1>
+    </header>
+    <main>
+      <section><h2>Datos Personales</h2></section>
+      <form action="/" method="post" name="encuesta">
+        <label for="nombre">¿Cuál es tu nombre?</label>
+        <input type="text" name="nombre" id="nombre" />
+        <label for="edad">¿Cuál es tu fecha de nacimiento?</label>
+        <input type="date" name="edad" id="edad" />
+        <section>
+          <h2>Entrenador</h2>
+          <label for="entrenador"
+            ><strong>¿Te gustaría que continuase Pellegrini?</strong></label
+          >
+          <input
+            type="radio"
+            name="entrenador"
+            id="entrenador_si"
+            value="si"
+          />Si
+          <input
+            type="radio"
+            name="entrenador"
+            id="entrenador_no"
+            value="no"
+          />No
+          <label for="entrenador2"
+            ><strong
+              >En caso de que no, ¿cuál sería tu opción favorita?</strong
+            ></label
+          >
+          <input
+            type="radio"
+            name="entrenador2"
+            id="entrenador_arzu"
+            value="arzu"
+          />Arzu
+          <input
+            type="radio"
+            name="entrenador2"
+            id="entrenador_digard"
+            value="digard"
+          />Digard
+          <input
+            type="radio"
+            name="entrenador2"
+            id="entrenador_otro"
+            value="otro"
+          />Otro
+        </section>
+        <section><h2>Plantilla</h2></section>
+        <p><strong>¿A qué jugador de la plantilla venderías?</strong></p>
+        <select name="jugador">
+          <option id="jugador_fran_vieites" value="fran_vieites">
+            Fran Vieites
+          </option>
+          <option id="jugador_hector_bellerin" value="hector_bellerin">
+            Héctor Bellerín
+          </option>
+          <option id="jugador_rodri" value="rodri">Rodri</option>
+          <option id="jugador_abde" value="abde">Abde</option>
+        </select>
+        <input type="submit" value="Enviar" />
+        <section><h2>Fichajes</h2></section>
+        <label for="fichaje"></label>¿A qué jugador ficharías?
+        <input
+          type="checkbox"
+          name="fichaje"
+          id="fichaje_adrián"
+          value="adrián"
+        />Adrián
+        <input
+          type="checkbox"
+          name="fichaje"
+          id="fichaje_vallés"
+          value="vallés"
+        />Vallés
+        <input
+          type="checkbox"
+          name="fichaje"
+          id="fichaje_vitao"
+          value="vitao"
+        />Vitao
+        <input
+          type="checkbox"
+          name="fichaje"
+          id="fichaje_dani_ceballos"
+          value="dani_ceballos"
+        />Dani Ceballos
+        <input
+          type="checkbox"
+          name="fichaje"
+          id="fichaje_alex_moreno"
+          value="alex_moreno"
+        />Alex Moreno
+        <button type="reset">Borrar</button>
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+  </body>
 </html>
